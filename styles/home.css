@@ -1,0 +1,175 @@
+.home {
+  background: url(../images/mobile/home-mobile.png);
+  background-size: cover;
+  height: 100vh;
+  color: var(--color-primary);
+  padding: 50px 25px;
+  box-sizing: border-box;
+}
+
+.home .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 5px;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+}
+
+.home-logo img {
+  width: 35px;
+}
+
+.home-descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-descricao p {
+  font-size: 4rem;
+  line-height: 70px;
+  font-style: italic;
+  margin-bottom: 10px;
+  backdrop-filter: blur(1.5px);
+  animation: 1s goDownFade;
+}
+
+@keyframes goDownFade {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+.home-descricao a {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary);
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 250ms;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.home-descricao a:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+@media (min-width: 768px) {
+  .home-logo {
+    font-size: 2rem;
+  }
+
+  .home-logo img {
+    width: 40px;
+  }
+
+  .home-descricao p {
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  .home-descricao a {
+    padding: 15px 20px;
+    font-size: 1rem;
+    width: fit-content;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    padding: 50px 50px;
+  }
+  .home-logo {
+    font-size: 2rem;
+  }
+
+  .home-logo img {
+    width: 40px;
+  }
+
+  .home-descricao p {
+    font-size: 4.7rem;
+    line-height: 70px;
+  }
+
+  .home-descricao a {
+    padding: 15px 20px;
+    font-size: 1rem;
+    transition: 250ms;
+  }
+}
+
+@media (min-width: 1366px) {
+  .home {
+    padding: 50px 0px;
+    background-image: url(../images/desktop/home-desktop.jpg);
+  }
+
+  .home-logo {
+    font-size: 2rem;
+  }
+
+  .home-logo img {
+    width: 40px;
+  }
+
+  .home-descricao p {
+    font-size: 5rem;
+    line-height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .home-descricao a {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    transition: 250ms;
+    width: fit-content;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .home {
+    padding: 50px 0px;
+    background-image: url(../images/desktop/home-desktop.jpg);
+  }
+
+  .home-logo {
+    font-size: 2rem;
+  }
+
+  .home-logo img {
+    width: 40px;
+  }
+
+  .home-descricao p {
+    font-size: 6rem;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  .home-descricao a {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    transition: 250ms;
+    width: fit-content;
+    text-decoration: none;
+  }
+}

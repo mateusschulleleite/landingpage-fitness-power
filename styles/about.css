@@ -1,0 +1,96 @@
+.about {
+    padding: 50px 25px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-description h2 {
+    color: var(--color-third);
+    font-size: 3.5rem;
+    font-style: italic;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.about-description p {
+    text-align: center;
+    color: var(--color-primary);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-images img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 80px 50px;
+    }
+
+    .about .container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .about-images {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .about-images img {
+        width: 250px;
+        height: fit-content;
+        transition: 250ms all;
+    }
+
+    .about-images img:hover {
+        transform: scale(1.05);
+        transition: 350ms all;
+    }
+
+    .container img:last-child {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1366px) {
+    .about {
+        padding: 150px 50px;
+    }
+
+    .about .container {
+        gap: 100px;
+    }
+
+
+    .about-images img {
+        width: 300px;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1920px) {
+    .about .container {
+        gap: 150px;
+    }
+}

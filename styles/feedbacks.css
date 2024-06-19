@@ -1,0 +1,53 @@
+.feedbacks {
+    padding: 50px 25px;
+}
+
+.feedbacks .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.feedbacks-description h2 {
+    color: var(--color-third);
+    font-size: 3.5rem;
+    font-style: italic;
+    line-height: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feedbacks-description p {
+    text-align: center;
+    color: var(--color-primary);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.feedbacks-list {
+    color: var(--color-secondary);
+    font-family: "Montserrat", sans-serif;
+    line-height: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.feedback-item img {
+    width: 100%;
+}
+
+.feedback-description {
+    background-color: var(--bg-color-primary);
+    padding: 30px;
+    margin-top: -5px;
+    height: 170px;
+}
+
+@media (min-width: 1024px) {
+    .feedbacks {
+        padding: 80px 50px;
+    }
+}

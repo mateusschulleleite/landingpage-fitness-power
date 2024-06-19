@@ -1,0 +1,67 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-third: #f9ef23;
+
+  --bg-color-primary: #f9ef23;
+  --bg-color-secondary: #141414;
+}
+
+::selection {
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary);
+}
+
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-color-primary);  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d3c912;  
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.icone-whats {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  animation: 1s icone-whats infinite;
+  transition: 250ms all;
+}
+
+.icone-whats:hover {
+  transform: scale(1.1);
+  transition: 350ms all;
+}
+
+@keyframes icone-whats {
+  10% {
+    right: 18px;
+  }
+  30% {
+    right: 25px;
+  }
+  50% {
+    right: 17px;
+  }
+
+}
