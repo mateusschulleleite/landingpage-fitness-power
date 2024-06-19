@@ -1,6 +1,6 @@
 .home {
   background: url(../images/mobile/home-mobile.png);
-  background-atachment: fixed;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   color: var(--color-primary);
