@@ -1,11 +1,12 @@
 .home {
-  background: url(../images/mobile/home-mobile.png);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  color: var(--color-primary);
-  padding: 50px 25px;
-  box-sizing: border-box;
+    background: url(../images/mobile/home-mobile.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    color: var(--color-primary);
+    padding: 50px 25px;
+    box-sizing: border-box;
 }
 
 .home .container {
